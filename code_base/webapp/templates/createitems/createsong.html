@@ -1,0 +1,65 @@
+{% include 'top.html' %}
+<div class="content">
+    <div class="container details">
+
+        <h2 class="title"> Add Song </h2>
+
+        <!-- Song Schema
+            CREATE TABLE Song (
+                song_id INTEGER PRIMARY KEY REFERENCES AudioMedia(media_id),
+                song_title VARCHAR(100),
+                length INTEGER
+            );
+            Associated Media_id information
+                - storage location
+            Associated Artist information
+                - artist_id
+            Associated Meta data
+                - description (4)
+                - song_genre (1)
+                - artwork (3)
+        -->
+        <!-- Query 9
+            TODO
+            Add Song
+            You will need to create a form for taking in input. Remember the input has to be valid,
+            so you will have to check the data somewhere. The best way is to pass any relevant information that is
+            needed to this page (such as artists, metadata type id's or values) and then manage the display similar to what is
+            done in the drop down menu for the search bar
+        -->
+
+        <form class="Add" method="POST" action="{{url_for('add_song')}}">
+            <h3> Song Information </h3>
+            Song title: <input type="text" name="song_title" value="No Song Name" placeholder="Please Input Song Title">
+            <br/>
+            Song Length: <input type="text" name="length" value="0" placeholder="Please Input Song length"> 
+            Storage location: <input type="text" name="storage_location" value="no location" placeholder="Please Input Storage location">
+            <br/>
+            <h3>Associated Meta Data</h3>
+            Description: <input type="text" name="description" value="No Description" placeholder="Please Input Description">
+            Song Genre: <input type="text" name="song_genre" value="No Genre" placeholder="Please Input Genre">
+            Artwork: <input type="text" name="artwork" value="NOARTWORK.png" placeholder="Please Input Artwork">
+            <br/>
+            <h3> Artist Information</h3>
+            <br/>
+            Artist: 
+            <select name ="artist_ID">
+                {% for instance in allartists %}
+                    <option value="{{ instance.artist_id }}" selected>"{{ instance.artist_name }}"</option>
+                {% endfor %}
+                </select>
+            <br/>
+            <br/>
+            <button class="flat" type="submit">Add</button>
+            <br/>
+            <hr/>
+            <hr/>
+            <hr/>
+        </form>
+
+        <br/>
+        <div>
+
+    </div>
+</div>
+{% include 'bottom.html'%}

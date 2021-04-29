@@ -1,0 +1,22 @@
+{% include 'top.html' %}
+<div class="content">
+    <div class="container details">
+
+        <h2 class="title">Settings</h2>
+
+        <form class="Add" method="POST" action="{{url_for('setting_functions')}}">
+                <h3> Change Password: </h3>
+                New Password: <input type="text" name="new_pass" placeholder="Input New Password">
+                <br/>
+                <br/>
+                <h3> Update Contact Details: </h3>
+                Email: <input type="text" name="new_email" placeholder="Input New Email">
+                Phone: <input type="text" name="new_phone" placeholder="Input New Phone No.">
+                <br/>
+                <br/>
+                <button class="flat" type="submit">Update</button>
+            </form>
+
+    </div>
+</div>
+{% include 'bottom.html'%}
