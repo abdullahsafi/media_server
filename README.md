@@ -45,8 +45,6 @@ including:
 
 • Consumed media
 
-The database connected is stored on The University of Sydney's server, however, you can change it to any host by specifing in the `database.py` file.
-
 Running the server
 ----------------
 
