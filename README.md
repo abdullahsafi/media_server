@@ -9,7 +9,16 @@
 The media server contains a flask app and sample data to mimic users, songs, playlists, etc. 
 
 Below is a snapshot of the login page:
-![login_page](/readme_imgs/login.PNG)
+<p align="center">
+<img src="/readme_imgs/login.PNG" alt="login.PNG" width="700"/>
+</p>
+
+Below is a snapshot of the home page:
+
+<p align="center">
+<img src="/readme_imgs/home.PNG" alt="home.png" width="700"/>
+</p>
+
 
 Task
 ----------------
