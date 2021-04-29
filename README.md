@@ -1,27 +1,52 @@
-DO NOT COMMIT TO MASTER
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <h1 align="center">🎵🎙 Media Server 🎙🎵</h1>
+</p>
 
-CHECK YOUR CURRENT BRANCH BEFORE YOU COMMIT
+#### USYD ISYS2120 Assignment 3
 
-ONLY COMMIT TO YOUR BANCH
+The media server contains a flask app and sample data to mimic users, songs, playlists, etc. 
 
-You can create multiple branches if you like
+Below is a snapshot of the login page:
+![login_page](/readme_imgs/login.png)
 
-It may be a good idea to create a new branch for each different issue you work on
+Task
+----------------
+The media server is designed to keep track of files and metadata information regarding
+various audio and video media.
+There are various consumable media:
 
-Push your branch to github
+• Movies
 
-Create a pull request
+• TV Shows (which have TV Episodes)
 
-To check your current branch use either
-Git Branch
-OR
-Git Status
+• Songs (which are performed by Artists and appear in Albums)
 
-See the git cheatsheet
-(google it)
+• Podcasts (which have Podcast Episodes)
 
-GitHub Desktop GUI is helpful
-(google it)
+There is also some User Account information which contains information about the user
+including:
 
+• Contact Methods
 
-ISYS2120_GROUP45_A3
+• Username / password
+
+• Subscribed podcasts
+
+• Consumed media
+
+The database connected is stored on The University of Sydney's server, however, you can change it to any host by specifing in the `database.py` file.
+
+Running the server
+----------------
+
+To run this server, edit the `config.ini`, and specifiy your database host, it's possible to just use localhost.
+
+Next specifiy the port number and host `main.py` and run using `python3 main.py`.
+
+To login use a dummy user:
+
+username = james.smith
+
+password = 2KK8oykkvp
