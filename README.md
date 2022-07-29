@@ -4,7 +4,6 @@
   <h1 align="center">🎵🎙 Media Server 🎙🎵</h1>
 </p>
 
-#### USYD ISYS2120 Assignment 3
 
 The media server contains a flask app and sample data to mimic users, songs, playlists, etc. 
 
